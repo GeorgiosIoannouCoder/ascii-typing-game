@@ -13,17 +13,17 @@
 <div align="center">
   <img src="logo.png" alt="Logo">
 
-<h3 align="center"><a href="https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/main/Ioannou_Report.pdf">Reporting and analyzing the compiler time of six Sorting Algorithms</a></h3>
+<h3 align="center"><a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game/blob/main/Ioannou_ASCII_Typing_Game.cpp">ASCII Typing Game</a></h3>
 
   <p align="center">
-    In this programming assignment, I investigated the compiler time of <b>six different Sorting Algorithms</b> for different input sizes. The six Sorting Algorithms analyzed in this report are: <b>Insertion Sort, Merge Sort, Heap Sort, Quick Sort, Randomized Quick Sort, and LSD Radix Sort</b>. A code that was built from scratch was used to generate random arrays of different sizes from 10 to 1000000 an excessively test each Sorting Algorithm. The code is based on the pseudocodes found in the textbook: <b>"Introduction to Algorithms, THIRD EDITION"</b> by Cormen Leiserson,Rivest, and Stein and published by The MIT Press. The program was repeated twice and the average compiler time was reported.
+    In this programming assignment, I developed an ASCII Typing Game based on the Rules and Requirements defined [here]()
     <br />
-    <a href="https://github.com/GeorgiosIoannouCoder/sorting-algorithms"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/GeorgiosIoannouCoder/sorting-algorithms/issues">Report Bug</a>
+    <a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game/issues">Report Bug</a>
     ·
-    <a href="https://github.com/GeorgiosIoannouCoder/sorting-algorithms/issues">Request Feature</a>
+    <a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game/issues">Request Feature</a>
   </p>
 </div>
 
@@ -33,7 +33,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#sorting-algorithms">Sorting Algorithms</a></li>
+        <li><a href="#ascii-typing-game">Sorting Algorithms</a></li>
         <li><a href="#key-feature">Key Feature</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -57,18 +57,50 @@
 
 ## About The Project
 
-<img src="logo.jpg" alt="Logo" width="200" height="100">
+<img src="logo.png" alt="Logo" width="200" height="100">
 
-### Sorting Algorithms
+## Rules
 
-<img src="time_complexity.png" alt="Sorting Algorithms">
+- Implement a simple typing lesson game. The computer will generate a random string of 7 characters and you need to reproduce it in ASCII (alphabetical) order within 12 seconds. You will lose points significantly if you fail to produce the same string reordered in the ASCII order within the set time interval. Note that uppercase letters are positioned earlier than lowercase letters in the ASCII coding.
+
+- You have 1,000 points at the beginning of the game. Given 7 randomly generated letters being mixed with lower and upper cases, you need to type them in the ASCII order within 12 seconds (12,000 msec). You will get 500 points every time you produce the right ordered matching string within the interval. You will lose an amount of delayed time in millisecond, e.g., your typing ended in 12,350 msec would lose 350 points.
+
+- If you misspell, you will be penalized by the total offset of mistaken letters. You will lose this offset from your points. The offset is computed by accumulating the absolute distance between two characters in the same position, one from the generated string and another from the input. For instance, the offset of "Game" and "Mag" is 81. The shorter string is padded with space(s). Therefore, |G-M| = 6, |a - a| = 0, |m - g| = 6, |e - (space)| = 69. If you misspell and overtime, you will be penalized for the double score of the offset, plus the delayed amount of time. The game ends if you reach score at least 5,000 or below 0. There were a few ways to approximate elapsed time. The new C++ 2011 standard has a good way to do it by including <chrono> library. See the next sample game session:
+ 
+    Your current points 1000, type in order -> fHzlHGu : GHHfluz
+    10864 milliseconds, you made it within the interval of 12000...
+    
+    Your current points 1500, type in order -> YQPNUyp : NPQUpy
+    12914 milliseconds, you *failed* it within the interval of 12000...
+    Answer must be "NPQUYpy"
+    String offset is 121, your total penalty is 1156..
+    
+    Your current points 344, type in order -> hDCciOC : CDOcih
+    11643 milliseconds, you made it within the interval of 12000...
+    Answer must be "CCDOchi"
+    String offset is 111, your total penalty is 111...
+    
+    Your current points 233, type in order -> zHZMucw : HMZcuwz
+    10316 milliseconds, you made it within the interval of 12000...
+    
+    Your current points 733, type in order -> xiWZnwV : VWZiux
+    11632 milliseconds, you made it within the interval of 12000...
+    Answer must be "VWZinwx" String offset is 9, your total penalty is 9...
+    
+    Your current points 724, type in order -> SquDDdR: DDRSdq
+    12555 milliseconds, you *failed* it within the interval of 12000...
+
+    Your current points 169, type in order -> IkGmrsX : IGXkmrs
+    12206 milliseconds, you *failed* it within the interval of 12000...
+    Answer must be "GIXkmrs" String offset is 4, your total penalty is 214...
+    Bye...
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 
 ### Key Feature
 
-1. **Excessively test each Sorting Algorithm with random arrays of different sizes from 10 to 1000000.**
+1. **A new way of learning ASCII and practice typing fast.**
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -76,7 +108,6 @@
 
 [![C++][C++]][C++-url]
 [![VisualStudio][VisualStudio]][VisualStudio-url]
-[![Excel][Excel]][Excel-url]
 [![Git][Git]][Git-url]
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
@@ -116,13 +147,13 @@
 2. Clone this repository
 
    ```sh
-   git clone https://github.com/GeorgiosIoannouCoder/sorting-algorithms.git
+   git clone https://github.com/GeorgiosIoannouCoder/ascii-typing-game.git
    ```
 
-3. Navigate to the sorting-algorithms git repository
+3. Navigate to the ascii-typing-game git repository
 
    ```sh
-   cd sorting-algorithms
+   cd ascii-typing-game
    ```
 
 4. Open your code editor.
@@ -131,13 +162,13 @@
    code .
    ```
 
-5. Run the .cpp file [here](https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/main/Ioannou_Sorting_Algorithms.cpp).
+5. Run the .cpp file [here](https://github.com/GeorgiosIoannouCoder/ascii-typing-game/blob/main/Ioannou_Sorting_Algorithms.cpp).
    
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
 ## Code
 
-The main code file can be found [here](https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/main/Ioannou_Sorting_Algorithms.cpp).
+The main code file can be found [here](https://github.com/GeorgiosIoannouCoder/ascii-typing-game/blob/main/Ioannou_ASCII_Typing_Game.cpp).
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -145,27 +176,15 @@ The main code file can be found [here](https://github.com/GeorgiosIoannouCoder/s
 
 The code of this project produces an output similiar to this:
 
-<img src="Table_1.png" alt="Logo">
+<img src="Ioannou_ASCII_Typing_Game.png" alt="Output">
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
-## Report
+## Demo
 
-The report of this project is located [here](https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/main/Ioannou_Report.pdf). The tables and graph found inside the Report are loacted [here](https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/main/Tables.xlsx).
+https://github.com/GeorgiosIoannouCoder/ascii-typing-game/assets/110848236/a3790c47-cd19-4410-89b9-3293dbfbe6a8
 
-<p align="right"><a href="#readme-top">Back to top</a></p>
-
-## Analysis
-
-As I stated in my hypothesis in the [Report](https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/main/Ioannou_Report.pdf) and by studying Table 3 and Figure 1, the **slowest Sorting Algorithm is Insertion Sort** and the **fastest Sorting Algorithm is LSD Radix Sort** among these six Algorithms. I was also correct that Quick Sort beats Heap Sort which beats Merge Sort. **However, Randomized Quick Sort (picking random pivot) is not faster than Quick Sort (picking the last element as the pivot)**. In fact, Randomized Quick Sort is sometimes slower than Heap Sort such as in the case when the input size is N=1000000. However, as the table shows, **Insertion Sort even though it is a quadratic Sorting Algorithm it is faster than Merge Sort, Randomized Quick Sort, and LSD Radix Sort for small array sizes and nearly sorted arrays**. Insertion Sort starts to be slow when the input size N gets larger.
-
-<img src="Table_1_excel.png" alt="Table 1">
-
-<img src="Table_2_excel.png" alt="Table 2">
-
-<img src="Table_3_excel.png" alt="Table 3">
-
-<img src="time_vs_input.png" alt="Time versus input">
+https://github.com/GeorgiosIoannouCoder/ascii-typing-game/assets/110848236/ad0d27ae-f3be-4c5e-a42c-9bd0d879bc23
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -186,11 +205,11 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/master/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/GeorgiosIoannouCoder/ascii-typing-game/blob/master/LICENSE) for more information.
 
 MIT License
 
-Copyright (c) 2021 Georgios Ioannou
+Copyright (c) 2020 Georgios Ioannou
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -218,24 +237,24 @@ Georgios Ioannou - [@LinkedIn](https://linkedin.com/in/georgiosioannoucoder)
 
 Georgios Ioannou - [@georgiosioannoucoder](https://georgiosioannoucoder.github.io/) - Please contact me via the form in my portfolio.
 
-Project Link: [https://github.com/GeorgiosIoannouCoder/sorting-algorithms](https://github.com/GeorgiosIoannouCoder/sorting-algorithms)
+Project Link: [https://github.com/GeorgiosIoannouCoder/ascii-typing-game](https://github.com/GeorgiosIoannouCoder/ascii-typing-game)
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
-[contributors-shield]: https://img.shields.io/github/contributors/GeorgiosIoannouCoder/sorting-algorithms.svg?style=for-the-badge
-[contributors-url]: https://github.com/GeorgiosIoannouCoder/sorting-algorithms/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/GeorgiosIoannouCoder/ascii-typing-game.svg?style=for-the-badge
+[contributors-url]: https://github.com/GeorgiosIoannouCoder/ascii-typing-game/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/GeorgiosIoannouCoder/sorting-algorithms.svg?style=for-the-badge
-[forks-url]: https://github.com/GeorgiosIoannouCoder/sorting-algorithms/network/members
+[forks-shield]: https://img.shields.io/github/forks/GeorgiosIoannouCoder/ascii-typing-game.svg?style=for-the-badge
+[forks-url]: https://github.com/GeorgiosIoannouCoder/ascii-typing-game/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/GeorgiosIoannouCoder/sorting-algorithms.svg?style=for-the-badge
-[stars-url]: https://github.com/GeorgiosIoannouCoder/sorting-algorithms/stargazers
+[stars-shield]: https://img.shields.io/github/stars/GeorgiosIoannouCoder/ascii-typing-game.svg?style=for-the-badge
+[stars-url]: https://github.com/GeorgiosIoannouCoder/ascii-typing-game/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/GeorgiosIoannouCoder/sorting-algorithms.svg?style=for-the-badge
-[issues-url]: https://github.com/GeorgiosIoannouCoder/sorting-algorithms/issues
+[issues-shield]: https://img.shields.io/github/issues/GeorgiosIoannouCoder/ascii-typing-game.svg?style=for-the-badge
+[issues-url]: https://github.com/GeorgiosIoannouCoder/ascii-typing-game/issues
 
-[license-shield]: https://img.shields.io/github/license/GeorgiosIoannouCoder/sorting-algorithms.svg?style=for-the-badge
-[license-url]: https://github.com/GeorgiosIoannouCoder/sorting-algorithms/blob/master/LICENSE
+[license-shield]: https://img.shields.io/github/license/GeorgiosIoannouCoder/ascii-typing-game.svg?style=for-the-badge
+[license-url]: https://github.com/GeorgiosIoannouCoder/ascii-typing-game/blob/master/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0077B5
 [linkedin-url]: https://linkedin.com/in/georgiosioannoucoder
@@ -249,12 +268,5 @@ Project Link: [https://github.com/GeorgiosIoannouCoder/sorting-algorithms](https
 [VisualStudio]: https://img.shields.io/badge/visual%20studio-5d2b90?style=for-the-badge&logo=visualstudio&logoColor=ffffff
 [VisualStudio-url]: https://visualstudio.microsoft.com/
 
-[Excel]: https://img.shields.io/badge/microsoft%20excel-1d6f42?style=for-the-badge&logo=microsoft
-[Excel-url]: https://www.microsoft.com/en-us/microsoft-365
-
 [Git]: https://img.shields.io/badge/git-000000?style=for-the-badge&logo=git&logoColor=orange
 [Git-url]: https://git-scm.com/
-
-https://github.com/GeorgiosIoannouCoder/ascii-typing-game/assets/110848236/a3790c47-cd19-4410-89b9-3293dbfbe6a8
-
-https://github.com/GeorgiosIoannouCoder/ascii-typing-game/assets/110848236/ad0d27ae-f3be-4c5e-a42c-9bd0d879bc23
