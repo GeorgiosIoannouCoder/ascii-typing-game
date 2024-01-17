@@ -16,7 +16,7 @@
 <h3 align="center"><a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game/blob/main/Ioannou_ASCII_Typing_Game.cpp">ASCII Typing Game</a></h3>
 
   <p align="center">
-    In this programming assignment, I developed an ASCII Typing Game based on the Rules and Requirements defined [here](https://github.com/GeorgiosIoannouCoder/ascii-typing-game?tab=readme-ov-file#rules)
+    In this programming assignment, I developed an ASCII Typing Game based on the Rules and Requirements defined <a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game?tab=readme-ov-file#rules">here</a>
     <br />
     <a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game"><strong>Explore the docs »</strong></a>
     <br />
