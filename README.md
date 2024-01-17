@@ -16,7 +16,7 @@
 <h3 align="center"><a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game/blob/main/Ioannou_ASCII_Typing_Game.cpp">ASCII Typing Game</a></h3>
 
   <p align="center">
-    In this programming assignment, I developed an ASCII Typing Game based on the Rules and Requirements defined [here]()
+    In this programming assignment, I developed an ASCII Typing Game based on the Rules and Requirements defined [here](https://github.com/GeorgiosIoannouCoder/ascii-typing-game?tab=readme-ov-file#rules)
     <br />
     <a href="https://github.com/GeorgiosIoannouCoder/ascii-typing-game"><strong>Explore the docs »</strong></a>
     <br />
@@ -33,7 +33,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#ascii-typing-game">Sorting Algorithms</a></li>
+        <li><a href="#rules">Rules</a></li>
         <li><a href="#key-feature">Key Feature</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -42,13 +42,12 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#setup">SetUp</a></li>
       </ul>
     </li>
     <li><a href="#code">Code</a></li>
     <li><a href="#output">Output</a></li>
-    <li><a href="#report">Report</a></li>
-    <li><a href="#analysis">Analysis</a></li>
+    <li><a href="#demo">Demo</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -67,33 +66,33 @@
 
 - If you misspell, you will be penalized by the total offset of mistaken letters. You will lose this offset from your points. The offset is computed by accumulating the absolute distance between two characters in the same position, one from the generated string and another from the input. For instance, the offset of "Game" and "Mag" is 81. The shorter string is padded with space(s). Therefore, |G-M| = 6, |a - a| = 0, |m - g| = 6, |e - (space)| = 69. If you misspell and overtime, you will be penalized for the double score of the offset, plus the delayed amount of time. The game ends if you reach score at least 5,000 or below 0. There were a few ways to approximate elapsed time. The new C++ 2011 standard has a good way to do it by including <chrono> library. See the next sample game session:
  
-    Your current points 1000, type in order -> fHzlHGu : GHHfluz
-    10864 milliseconds, you made it within the interval of 12000...
+   **Your current points 1000, type in order -> fHzlHGu : GHHfluz**
+    **10864 milliseconds, you made it within the interval of 12000...**
     
-    Your current points 1500, type in order -> YQPNUyp : NPQUpy
-    12914 milliseconds, you *failed* it within the interval of 12000...
-    Answer must be "NPQUYpy"
-    String offset is 121, your total penalty is 1156..
+    **Your current points 1500, type in order -> YQPNUyp : NPQUpy**
+    **12914 milliseconds, you *failed* it within the interval of 12000...**
+    **Answer must be "NPQUYpy"**
+    **String offset is 121, your total penalty is 1156..**
     
-    Your current points 344, type in order -> hDCciOC : CDOcih
-    11643 milliseconds, you made it within the interval of 12000...
-    Answer must be "CCDOchi"
-    String offset is 111, your total penalty is 111...
+    **Your current points 344, type in order -> hDCciOC : CDOcih**
+    **11643 milliseconds, you made it within the interval of 12000...**
+    **Answer must be "CCDOchi"**
+    **String offset is 111, your total penalty is 111...**
     
-    Your current points 233, type in order -> zHZMucw : HMZcuwz
-    10316 milliseconds, you made it within the interval of 12000...
+    **Your current points 233, type in order -> zHZMucw : HMZcuwz**
+    **10316 milliseconds, you made it within the interval of 12000...**
     
-    Your current points 733, type in order -> xiWZnwV : VWZiux
-    11632 milliseconds, you made it within the interval of 12000...
-    Answer must be "VWZinwx" String offset is 9, your total penalty is 9...
+    **Your current points 733, type in order -> xiWZnwV : VWZiux**
+    **11632 milliseconds, you made it within the interval of 12000...**
+    **Answer must be "VWZinwx" String offset is 9, your total penalty is 9...**
     
-    Your current points 724, type in order -> SquDDdR: DDRSdq
-    12555 milliseconds, you *failed* it within the interval of 12000...
+    **Your current points 724, type in order -> SquDDdR: DDRSdq**
+    **12555 milliseconds, you *failed* it within the interval of 12000...**
 
-    Your current points 169, type in order -> IkGmrsX : IGXkmrs
-    12206 milliseconds, you *failed* it within the interval of 12000...
-    Answer must be "GIXkmrs" String offset is 4, your total penalty is 214...
-    Bye...
+    **Your current points 169, type in order -> IkGmrsX : IGXkmrs**
+    **12206 milliseconds, you *failed* it within the interval of 12000...**
+    **Answer must be "GIXkmrs" String offset is 4, your total penalty is 214...**
+    **Bye...**
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
@@ -134,9 +133,7 @@
 
 ***NOTE: You can use whatever code editor that you want. This project was created and tested with Visual Studio.***
 
-### Installation
-
-#### SetUp
+### SetUp
 
 1. Navigate to the directory where you want to clone/run/save the application
 
